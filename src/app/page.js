@@ -8,10 +8,7 @@ import GameInfo from "../Components/GameInfo/GameInfo"
 import {exportGameData} from "../utils/utils"
 
 const theme = createTheme();
-theme.typography.h2 = {
-    fontSize: '0.2rem',
-    color: 'white',
-}
+
 export default function Home() {
 
   const gameData = exportGameData()
@@ -19,7 +16,9 @@ export default function Home() {
     <Box  display="flex" justifyContent="center" alignItems="center">
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid size={12}>
-          <Typography variant="h2" justifyContent={"center"} alignItems={"center"}>
+          <Typography variant="h2" justifyContent={"center"} alignItems={"center"} sx={{
+            
+          }}>
             Welcome to my portfolio!
           </Typography>
         </Grid>
